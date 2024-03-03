@@ -8,12 +8,16 @@
   -warn-error
   +a
   -open
-  Base)
- (libraries base stdio)
+  Base
+  -w
+  -70)
+ (libraries base base_quickcheck ppx_expect.runtime sexp_pretty stdio)
+ (inline_tests)
  (preprocess
   (pps
    ppx_compare
    ppx_enumerate
+   ppx_expect
    ppx_hash
    ppx_here
    ppx_let
