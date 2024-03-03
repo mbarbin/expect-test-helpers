@@ -11,7 +11,7 @@
   Base
   -w
   -70)
- (libraries base base_quickcheck ppx_expect.runtime sexp_pretty stdio)
+ (libraries base base_quickcheck sexp_pretty stdio)
  (inline_tests)
  (preprocess
   (pps
@@ -22,4 +22,5 @@
    ppx_here
    ppx_let
    ppx_sexp_conv
+   ppx_sexp_message
    ppx_sexp_value)))
