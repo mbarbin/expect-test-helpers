@@ -1,5 +1,3 @@
-open! Base
-
 module CR = struct
   type t =
     | CR

@@ -1,5 +1,3 @@
-open! Base
-open! Stdio
 include Expect_test_helpers_base_intf
 
 let print_string string =

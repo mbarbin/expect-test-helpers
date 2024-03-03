@@ -26,6 +26,10 @@
    (and
     (>= v0.16)
     (< v0.17)))
+  (base_quickcheck
+   (and
+    (>= v0.16)
+    (< v0.17)))
   (ppx_compare
    (and
     (>= v0.16)

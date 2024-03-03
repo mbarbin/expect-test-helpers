@@ -9,6 +9,8 @@
   +a
   -open
   Base
+  -open
+  Stdio
   -w
   -70)
  (libraries base base_quickcheck sexp_pretty stdio)
