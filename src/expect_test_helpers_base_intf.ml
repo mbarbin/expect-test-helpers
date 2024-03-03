@@ -120,7 +120,7 @@ module type Expect_test_helpers_base = sig
   val print_string : ?hide_positions:bool (** default is [false] *) -> string -> unit
   val print_endline : ?hide_positions:bool (** default is [false] *) -> string -> unit
 
-  (** Behaves like [[%expect.output]].  *)
+  (** Behaves like [[%expect.output]]. *)
   val expect_test_output : Source_code_position.t -> string
 
   (** Returns [true] if running inside the body of [let%expect_test], or [false]
@@ -167,7 +167,7 @@ module type Expect_test_helpers_base = sig
       provided module. If the comparison fails, prints a message that renders the
       arguments as sexps. *)
   val require_equal
-    :  ?cr:CR.t (** default is [CR]    *)
+    :  ?cr:CR.t (** default is [CR] *)
     -> ?hide_positions:bool (** default is [false] when [cr=CR], [true] otherwise *)
     -> ?if_false_then_print_s:Sexp.t Lazy.t
     -> ?message:string
@@ -180,7 +180,7 @@ module type Expect_test_helpers_base = sig
   (** Like [require_equal], but derives an equality predicate from a comparison
       function. *)
   val require_compare_equal
-    :  ?cr:CR.t (** default is [CR]    *)
+    :  ?cr:CR.t (** default is [CR] *)
     -> ?hide_positions:bool (** default is [false] when [cr=CR], [true] otherwise *)
     -> ?message:string
     -> Source_code_position.t
@@ -191,7 +191,7 @@ module type Expect_test_helpers_base = sig
 
   (** Like [require_equal] but instead requires that the arguments are *not* equal. *)
   val require_not_equal
-    :  ?cr:CR.t (** default is [CR]    *)
+    :  ?cr:CR.t (** default is [CR] *)
     -> ?hide_positions:bool (** default is [false] when [cr=CR], [true] otherwise *)
     -> ?if_false_then_print_s:Sexp.t Lazy.t
     -> ?message:string
@@ -204,7 +204,7 @@ module type Expect_test_helpers_base = sig
   (** Like [require_not_equal], but derives an equality predicate from a comparison
       function. *)
   val require_compare_not_equal
-    :  ?cr:CR.t (** default is [CR]    *)
+    :  ?cr:CR.t (** default is [CR] *)
     -> ?hide_positions:bool (** default is [false] when [cr=CR], [true] otherwise *)
     -> ?message:string
     -> Source_code_position.t
@@ -216,7 +216,7 @@ module type Expect_test_helpers_base = sig
   (** Like [require_equal], but when equality fails produces a message including sexps of
       both [Set.diff first second] and [Set.diff second first] to aid in debugging. *)
   val require_sets_are_equal
-    :  ?cr:CR.t (** default is [CR]    *)
+    :  ?cr:CR.t (** default is [CR] *)
     -> ?hide_positions:bool (** default is [false] when [cr=CR], [true] otherwise *)
     -> ?names:string * string (** default is ["first", "second"] *)
     -> Source_code_position.t
@@ -389,7 +389,6 @@ module type Expect_test_helpers_base = sig
     -> 'a list
     -> unit
 
-
   (** [quickcheck] is similar to [Base_quickcheck.Test.run], but
 
       1. [quickcheck] takes separate arguments for the values which
@@ -417,7 +416,7 @@ module type Expect_test_helpers_base = sig
   val quickcheck_m
     :  Source_code_position.t
     -> ?config:Base_quickcheck.Test.Config.t
-    (** default is [Base_quickcheck.Test.default_config] *)
+         (** default is [Base_quickcheck.Test.default_config] *)
     -> ?cr:CR.t (** default is [CR] *)
     -> ?examples:'a list
     -> ?hide_positions:bool (** default is [false] when [cr=CR], [true] otherwise *)
