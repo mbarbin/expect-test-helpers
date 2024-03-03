@@ -17,7 +17,8 @@
 
 (package
  (name expect-test-helpers)
- (synopsis "Re-publishing [Expect_test_helpers_base] as a standalone package")
+ (synopsis
+  "Re-publishing [Expect_test_helpers_base] as a standalone package")
  (depends
   (ocaml
    (>= 5.1))
@@ -29,19 +30,7 @@
    (and
     (>= v0.16)
     (< v0.17)))
-  (ppx_enumerate
-   (and
-    (>= v0.16)
-    (< v0.17)))
-  (ppx_hash
-   (and
-    (>= v0.16)
-    (< v0.17)))
-  (ppx_here
-   (and
-    (>= v0.16)
-    (< v0.17)))
-  (ppx_let
+  (ppx_expect
    (and
     (>= v0.16)
     (< v0.17)))
@@ -49,7 +38,15 @@
    (and
     (>= v0.16)
     (< v0.17)))
+  (ppx_sexp_message
+   (and
+    (>= v0.16)
+    (< v0.17)))
   (ppx_sexp_value
+   (and
+    (>= v0.16)
+    (< v0.17)))
+  (sexp_pretty
    (and
     (>= v0.16)
     (< v0.17)))
