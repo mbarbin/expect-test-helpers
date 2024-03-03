@@ -1,6 +1,6 @@
-This library modifies the original `appendable_list` project in order to make it
-a standalone opam package. The original code can be found
-[here](https://github.com/janestreet/core_extended/tree/master/appendable_list)
+This library re-publishes the original `expect_test_helpers_base` library in order
+to make it a standalone opam package. The original code can be found
+[here](https://github.com/janestreet/core/tree/master/expect_test_helpers_core)
 and has the following license:
 
 The MIT License
