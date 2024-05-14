@@ -21,7 +21,7 @@
   "Re-publishing [Expect_test_helpers_base] as a standalone package")
  (depends
   (ocaml
-   (>= 5.1))
+   (>= 5.2))
   (base
    (and
     (>= v0.17)
