@@ -2,6 +2,14 @@
 
 [![CI Status](https://github.com/mbarbin/expect-test-helpers/workflows/ci/badge.svg)](https://github.com/mbarbin/expect-test-helpers/actions/workflows/ci.yml)
 
+:warning: This repository is now a public archive.
+
+I ended up going a different route and tried to make the separation between tests and non-tests packages clearer in my setups.
+
+I have stopped developping this project and I do not plan on maintaining it forward.
+
+----
+
 This library offers a repackaging of `expect_test_helpers_base`, as a standalone
 opam package for using with `Base`.
 
